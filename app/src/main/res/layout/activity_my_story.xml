@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:background="@drawable/orange"
+    tools:context=".MyStory">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <EditText
+            android:id="@+id/editTextTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Story Title"
+            android:textStyle="italic" />
+
+
+
+        <EditText
+            android:id="@+id/editTextPlace"
+            android:layout_below="@id/editTextTitle"
+            android:layout_marginTop="20dp"
+            android:hint="Place of The Story"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/editTextTag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editTextPlace"
+            android:hint="Please Give Key Words(Ex: Aditional Places, Events etc.) of Your Story"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/editTextStory"
+            android:layout_below="@id/editTextTag"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:inputType="textMultiLine"
+            android:gravity="center"
+            android:hint="Write Your Mind Here!"
+            />
+
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:id="@+id/upImageLayout"
+            android:layout_below="@id/editTextStory"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Picture"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <ImageView
+                android:id="@+id/imageButtonMyStory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editTextTitle"
+                android:src="@drawable/user_image"
+                android:maxWidth="30dp"
+                android:maxHeight="30dp"
+                android:minHeight="10dp"
+                android:minWidth="10dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/upImageLayout"
+            android:layout_alignRight="@id/editTextStory"
+            android:layout_marginTop="10dp"
+            android:text="Save"
+            android:background="@drawable/custom_button"
+            android:onClick="saveMyStory"/>
+
+    </RelativeLayout>
+
+</ScrollView>

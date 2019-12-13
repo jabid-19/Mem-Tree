@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:background="#FAE4E9">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textViewMyStoryTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:text="My Story"
+            android:fontFamily="cursive" />
+        <ImageView
+            android:id="@+id/imageViewMyImage"
+            android:layout_below="@id/textViewMyStoryTitle"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user_image"
+            android:layout_marginRight="10dp"/>
+        <TextView
+            android:id="@+id/textViewMyStoryPlace"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageViewMyImage"
+            android:layout_below="@id/textViewMyStoryTitle"
+            android:inputType="text"
+            android:layout_alignLeft="@+id/textViewFamilyMemberStoryActorName"
+            android:layout_marginTop="6dp"
+            android:text="Place"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/textViewMyStoryTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/imageViewMyImage"
+            android:inputType="datetime"
+            android:layout_alignLeft="@id/textViewFamilyMemberStoryActorName"
+            android:layout_below="@id/textViewMyStoryPlace"
+            android:layout_marginTop="5dp"
+            android:text="2012"
+            android:gravity="left"/>
+        <TextView
+            android:id="@+id/textViewMyStoryDistinct"
+            android:layout_below="@id/imageViewMyImage"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textMultiLine"
+            android:text="My Story Goes Here"
+            android:padding="10dp"
+            android:fontFamily="sans-serif-condensed"/>
+
+    </RelativeLayout>
+
+</ScrollView>

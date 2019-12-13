@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="20dp"
+    android:orientation="horizontal"
+    tools:context=".FamilyStoryList">
+    <ImageView
+        android:id="@+id/imageViewFamilyStories"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/user_image"
+        android:layout_marginRight="10dp" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Family Story"
+        android:inputType="textMultiLine"
+        android:textColor="#F20505"
+        android:fontFamily="serif"
+        style="@style/Base.TextAppearance.AppCompat.Medium"/>
+</LinearLayout>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/orange"
+    android:padding="20dp"
+    tools:context=".OthersStory">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Story Title"
+            android:textStyle="italic"
+            />
+
+        <EditText
+            android:id="@+id/etPlace"
+            android:layout_below="@id/etTitle"
+            android:layout_marginTop="20dp"
+            android:hint="Place of The Story"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+       />
+        <EditText
+            android:id="@+id/etKeyWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etPlace"
+            android:hint="Please Give Key Words(Ex: Aditional Places, Events etc.) of Your Story"
+            android:inputType="text"/>
+        <EditText
+            android:id="@+id/etActor"
+            android:layout_below="@id/etKeyWords"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hero of Heroine!"
+            />
+        <EditText
+            android:id="@+id/etStory"
+            android:layout_below="@id/etActor"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:inputType="textMultiLine"
+            android:hint="Write Your Family Story Here!"
+           />
+
+        <LinearLayout
+            android:id="@+id/imageUpLayout"
+            android:layout_below="@id/etStory"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Picture"
+                android:layout_gravity="center"
+                android:textSize="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <ImageButton
+                android:id="@+id/ivOtherStory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etTitle"
+                android:src="@drawable/user_image"
+                android:maxWidth="30dp"
+                android:maxHeight="30dp"
+                android:minHeight="10dp"
+                android:minWidth="10dp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imageUpLayout"
+            android:layout_alignRight="@id/etStory"
+            android:layout_marginTop="10dp"
+            android:text="Save"
+            android:background="@drawable/others_button"
+            android:onClick="saveOthersStory"/>
+    </RelativeLayout>
+
+</ScrollView>

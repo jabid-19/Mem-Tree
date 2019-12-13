@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="nsu.lict.familytree.LandingActivity"
+    android:padding="10dp"
+    android:background="@drawable/orange">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+        <ImageView
+            android:id="@+id/imageViewUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/user_two"
+            />
+        <TextView
+            android:id="@+id/textViewHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello User !"
+            android:layout_toRightOf="@id/imageViewUser"
+            android:layout_alignTop="@id/imageViewUser"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#ffd84b"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/tvClan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clan ID# "
+            android:layout_toRightOf="@id/imageViewUser"
+            android:layout_below="@id/textViewHello"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:textColor="#ffd84b"
+            android:layout_marginLeft="20dp"/>
+
+
+        <ListView
+            android:id="@+id/listViewStories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageViewUser"
+            android:textAlignment="textStart"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp">
+        </ListView>
+        <Button
+            android:id="@+id/buttonMyStory"
+            android:layout_below="@id/listViewStories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:text="My Stories"
+            android:textAllCaps="false"
+            android:layout_marginBottom="20dp"
+            android:onClick="myStories"
+            />
+        <Button
+            android:id="@+id/buttonOthersStory"
+            android:layout_below="@+id/buttonMyStory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button"
+            android:text="Others Stories"
+            android:textAllCaps="false"
+            android:layout_marginBottom="20dp"
+            android:onClick="othersStories"/>
+        <Button
+            android:id="@+id/buttonAddEvent"
+            android:layout_below="@id/buttonOthersStory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Event"
+            android:textAllCaps="false"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/custom_button"
+            android:onClick="addEvent"/>
+
+        <Button
+            android:id="@+id/btnSignOut"
+            android:layout_below="@id/buttonAddEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Sign Out"
+            android:background="@drawable/custom_button"
+            android:onClick="signout"/>
+    </RelativeLayout>
+
+</ScrollView>
